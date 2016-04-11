@@ -30,7 +30,7 @@ unless these files are in the Working directory:
   "X_test.txt"          "X_train.txt"         "y_test.txt"          "y_train.txt"
   "subject_test.txt"    "subject_train.txt"  "activity_labels.txt" "features.txt"
 
-Part 5 alse requires the plyr package.
+Part 5 also requires the plyr package.
 
 PART 1:Merge the Training and Test Data into a single 'tidy' data set.
 -----------------------------------------------------------------------
@@ -56,7 +56,7 @@ into a single data set.
 
 -----------------------------------------------------------------------
 -PART 3: Apply descriptive activity names to name the Activity variable   
--        in the data set.
+         in the data set.
 -----------------------------------------------------------------------
 
 First, the program creates decriptive names for the numeric activity categories, 
@@ -74,7 +74,7 @@ This code section replaces abbreviations with actual names of the measures, via 
 
 -----------------------------------------------------------------------
 -PART 5: Create a 2nd tidy data set with the average of each variable, 
--        for each Activity and each Subject.  
+         for each Activity and each Subject.  
 -----------------------------------------------------------------------
 This is the final section of program code, where the numeric data are 
 summarized as mean values by subject and activity. The final output is
