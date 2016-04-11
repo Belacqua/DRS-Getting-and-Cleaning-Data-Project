@@ -1,1 +1,140 @@
-Etesst
+CODE BOOK - 'Getting and Cleaning Data' Class Project - David R Scott ('Belaqua@me.com')
+Created April 10th, 2016
+
+This data set was derived from:
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0, Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+
+The fields below, and definitions given, are the contained in the file "ActivityDataSummarized.txt", which is the 
+final output of program run_analysis.r. 
+
+The data represents the result of a series of transformations in that R script, which have created in a TIDY data set, 
+due to a series of transformations resulting in data which has each measured variable is in 1 column, each different 
+observation of that column is in a different row; there is a single table for each kind of variable, and when mutliple 
+tables are used to create data across different types of data, there is abn explicit unique linking key column. 
+
+Additionally, data is tidy when column names are functionally descriptive and have few if any special characters.
+
+The original data above for the project was not tidy. I made it so by the following transformational steps:
+                                          1. Applying descriptive (instead of numeric) column headers to all fields, based on 
+                                            the feature name data provided with the project data in a separate file.
+                                          2. Removing columns not defined by the project criterion (via grep and grepl text functions.)
+                                          3. Replacing numeric codes with descriptve text for the various user activities.
+                                          4. Removing all abbraviations for the measure field names, so that each field name
+                                             included the complete word describing the type of measurement it represented.
+                                          5. Summarizing for all categorical fields separately, to infrom the output with these 
+                                             categories as distinct factors.
+                                          
+
+The result are the fields below, which include their value definitions.
+-CATEGORICAL VARIABLES
+-FIELD:                                                   DEFINITION
+"Subject"                                       An integer index from 1-30 corresponding to indicvduals who particpated in the study
+
+"ActivityCategory"                              A type of physical activity being monitored, one of the fowwling 6 categories:
+                                                1 WALKING
+                                                2 WALKING_UPSTAIRS
+                                                3 WALKING_DOWNSTAIRS
+                                                4 SITTING
+                                                5 STANDING
+                                                6 LAYING
+
+-MEASURE VARIABLES
+The following 78 fields are the average value for each of the level combinations of the categorical fields above, 
+for the measures defined in the project documentation to be considered - namely, each type of technical device measurement 
+(see below for these) which in the original data set included mean and standard devisation of a measure's time-spand summary.
+The technical devices and other specifications which encompass all the field measures were as follows:
+                                              
+                                              The accelerometer and gyroscope 3-axial raw signals , in coordinates X, Y, and Z.
+                                              
+                                              These time domain signals (prefix 't' to denote time.) 
+                                              
+                                              The acceleration signal was then separated into body and gravity acceleration signals, 
+                                              which were also separated into X,Y,and Z space cooridnates. 
+
+                                              Body linear acceleration and angular velocity were derived in time to obtain Jerk signals 
+                                              
+                                              Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm.
+
+                                              Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+Each combination of these types of measurement and techical device orientation of the activities captured as signals, were used to 
+estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+From each combination of these measurements, the 78 measure fields below werer detrived.
+
+From these fields, the final 
+-FIELD:                                                   DEFINITION (ALL FIELDS)
+"timeBodyAccelerationmeanXAverage"                        Average of the 
+"timeBodyAccelerationmeanYAverage" 
+"timeBodyAccelerationmeanZAverage" 
+"timeBodyAccelerationStandardDeviationXAverage" 
+"timeBodyAccelerationStandardDeviationYAverage" 
+"timeBodyAccelerationStandardDeviationZAverage" 
+"timeGravityAccelerationmeanXAverage" 
+"timeGravityAccelerationmeanYAverage" 
+"timeGravityAccelerationmeanZAverage" 
+"timeGravityAccelerationStandardDeviationXAverage" 
+"timeGravityAccelerationStandardDeviationYAverage" 
+"timeGravityAccelerationStandardDeviationZAverage" 
+"timeBodyAccelerationJerkmeanXAverage" 
+"timeBodyAccelerationJerkmeanYAverage" 
+"timeBodyAccelerationJerkmeanZAverage" 
+"timeBodyAccelerationJerkStandardDeviationXAverage" 
+"timeBodyAccelerationJerkStandardDeviationYAverage" 
+"timeBodyAccelerationJerkStandardDeviationZAverage" 
+"timeBodyGyroscopemeanXAverage" 
+"timeBodyGyroscopemeanYAverage" 
+"timeBodyGyroscopemeanZAverage" 
+"timeBodyGyroscopeStandardDeviationXAverage" 
+"timeBodyGyroscopeStandardDeviationYAverage" 
+"timeBodyGyroscopeStandardDeviationZAverage" 
+"timeBodyGyroscopeJerkmeanXAverage" 
+"timeBodyGyroscopeJerkmeanYAverage" 
+"timeBodyGyroscopeJerkmeanZAverage" 
+"timeBodyGyroscopeJerkStandardDeviationXAverage" 
+"timeBodyGyroscopeJerkStandardDeviationYAverage" 
+"timeBodyGyroscopeJerkStandardDeviationZAverage" 
+"timeBodyAccelerationMagmeanAverage" 
+"timeBodyAccelerationMagStandardDeviationAverage" 
+"timeGravityAccelerationMagmeanAverage" 
+"timeGravityAccelerationMagStandardDeviationAverage" 
+"timeBodyAccelerationJerkMagmeanAverage" 
+"timeBodyAccelerationJerkMagStandardDeviationAverage" 
+"timeBodyGyroscopeMagmeanAverage" 
+"timeBodyGyroscopeMagStandardDeviationAverage" 
+"timeBodyGyroscopeJerkMagmeanAverage" 
+"timeBodyGyroscopeJerkMagStandardDeviationAverage" 
+"frequencyBodyAccelerationmeanXAverage" 
+"frequencyBodyAccelerationmeanYAverage" 
+"frequencyBodyAccelerationmeanZAverage" 
+"frequencyBodyAccelerationStandardDeviationXAverage" 
+"frequencyBodyAccelerationStandardDeviationYAverage" 
+"frequencyBodyAccelerationStandardDeviationZAverage" 
+"frequencyBodyAccelerationmeanFrequencyXAverage" 
+"frequencyBodyAccelerationmeanFrequencyYAverage" 
+"frequencyBodyAccelerationmeanFrequencyZAverage" 
+"frequencyBodyAccelerationJerkmeanXAverage" 
+"frequencyBodyAccelerationJerkmeanYAverage" 
+"frequencyBodyAccelerationJerkmeanZAverage" 
+"frequencyBodyAccelerationJerkStandardDeviationXAverage" 
+"frequencyBodyAccelerationJerkStandardDeviationYAverage" 
+"frequencyBodyAccelerationJerkStandardDeviationZAverage" 
+"frequencyBodyAccelerationJerkmeanFrequencyXAverage" 
+"frequencyBodyAccelerationJerkmeanFrequencyYAverage" 
+"frequencyBodyAccelerationJerkmeanFrequencyZAverage" 
+"frequencyBodyGyroscopemeanXAverage" 
+"frequencyBodyGyroscopemeanYAverage" 
+"frequencyBodyGyroscopemeanZAverage" 
+"frequencyBodyGyroscopeStandardDeviationXAverage" 
+"frequencyBodyGyroscopeStandardDeviationYAverage" 
+"frequencyBodyGyroscopeStandardDeviationZAverage" 
+"frequencyBodyGyroscopemeanFrequencyXAverage" 
+"frequencyBodyGyroscopemeanFrequencyYAverage" 
+"frequencyBodyGyroscopemeanFrequencyZAverage" 
+"frequencyBodyAccelerationMagmeanAve
