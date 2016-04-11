@@ -55,8 +55,7 @@ Finally, this section ends by combining the X (measured data, subject and 'Test/
 into a single data set.
 
 -----------------------------------------------------------------------
--PART 3: Apply descriptive activity names to name the Activity variable   
-         in the data set.
+-PART 3: Apply descriptive activity names to name the Activity variable in the data set.
 -----------------------------------------------------------------------
 
 First, the program creates decriptive names for the numeric activity categories, 
@@ -73,8 +72,7 @@ This code section replaces abbreviations with actual names of the measures, via 
 (See the codebook for more details on what these terms mean.)
 
 -----------------------------------------------------------------------
--PART 5: Create a 2nd tidy data set with the average of each variable, 
-         for each Activity and each Subject.  
+-PART 5: Create a 2nd tidy data set with the average of each variable, for each Activity and each Subject.  
 -----------------------------------------------------------------------
 This is the final section of program code, where the numeric data are 
 summarized as mean values by subject and activity. The final output is
