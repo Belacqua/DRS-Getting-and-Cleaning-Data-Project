@@ -66,12 +66,22 @@ The technical devices and other specifications which encompass all the field mea
 Each combination of these types of measurement and techical device orientation of the activities captured as signals, were used to 
 estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-From each combination of these measurements, the 78 measure fields below werer detrived.
+To summarize, the combinations features below measure either acceleramoter or gyroscope meaures of body movement in 3-dimsional space, 
+either as the upward force of the body, or as the effec of gravity, and also include jerk, and also frequency signals via a fast fourier
+transfer. And the original data set included summary metrics over a period of time, so these data have either mean or standard deviations
+as sumamry types. 
 
-From these fields, the final 
+From each combination of these measurements, the 78 measure fields below werer detrived. And Because of the tidying of the data set, 
+all of these aspects of the measrements are captured in the name of the fields. And finally, the summary at the categorical level as defined above
+was applied to the data as just defined.
+
+So from the final summary, the mean of each value was taken for each level.
+
+
+
 -FIELD:                                                   DEFINITION (ALL FIELDS)
-"timeBodyAccelerationmeanXAverage"                        Average of the 
-"timeBodyAccelerationmeanYAverage" 
+"timeBodyAccelerationmeanXAverage"                        Average of the measurement as defined in the field names, 
+"timeBodyAccelerationmeanYAverage"                        and elaborated in the staement on measure variabels above. 
 "timeBodyAccelerationmeanZAverage" 
 "timeBodyAccelerationStandardDeviationXAverage" 
 "timeBodyAccelerationStandardDeviationYAverage" 
