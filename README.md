@@ -2,7 +2,7 @@
  Created April 10th, 2016, in R v3.2.4
 
 This program creates as its output a tidy data set called "ActivityDataSummarized.txt", which
-includes summary statistics from SmartPhones Dataset on Human Activity Recognition devices (please 
+includes summary statistics from Samsung SmartPhones Dataset on Human Activity Recognition devices (please 
 see the attached R program script 'run_analsis.R', and the data details in the project codebook, both
  of which are attached to this repo.)
 
