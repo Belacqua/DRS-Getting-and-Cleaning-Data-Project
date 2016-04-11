@@ -1,4 +1,4 @@
- 'Getting and Cleaning Data' Class Project - David R Scott ('Belaqua@me.com') 
+ -'Getting and Cleaning Data' Class Project - David R Scott ('Belaqua@me.com') 
  Created April 10th, 2016, in R v3.2.4
 
 This program creates as its output a tidy data set called "ActivityDataSummarized.txt", which
@@ -6,18 +6,23 @@ includes summary statistics from SmartPhones Dataset on Human Activity Recogniti
 see the attached R program script 'run_analsis.R', and the data details in the project codebook, both
  of which are attached to this repo.)
 
-(Also, please note: some font irregularity exisits in this docuement which I have not been able to resolve. Please excuse the occasional words and phrases which abruptly shift to larger bold font. Thanks.)
 
 The program accomplishes the 5 primary sucess criteria of given for this project, in 5 programming steps:
+                            
                             1: Merge the Training and Test Data into a single 'tidy' data set. 
+                            
                             2: Extract only the Mean and Standard Deviation measures from each 
                                 of the available measurement data fields on that data set.
+                            
                             3: Apply descriptive activity names to name the Activity variable   
                                in the data set.
+                            
                             4: Label the data set with descriptive variable names.
+                            
                             5: Create a final  tidy data set with the average of each variable, 
                                for each Activity and each Subject. 
                                This file is called "ActivityDataSummarized.txt"
+
 The 5 criteria above  roughly correspond to the 5 parts of the program. However, this correspondence is not
 exact. For example, an exception is part 1, where test and training data are combined. Though this is still 
 done in part 1, the bringing together of the 'X' (measurements) and 'Y' (Activities) columnns into a single data set is accomplished only at the end of part 2, after the measure data column list has been reduced. 
