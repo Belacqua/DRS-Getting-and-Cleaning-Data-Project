@@ -1,4 +1,4 @@
- -'Getting and Cleaning Data' Class Project - David R Scott ('Belaqua@me.com') 
+ 'Getting and Cleaning Data' Class Project - David R Scott ('Belaqua@me.com') 
  Created April 10th, 2016, in R v3.2.4
 
 This program creates as its output a tidy data set called "ActivityDataSummarized.txt", which
