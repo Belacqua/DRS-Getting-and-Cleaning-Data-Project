@@ -1,12 +1,13 @@
  'Getting and Cleaning Data' Class Project - David R Scott ('Belaqua@me.com') 
  Created April 10th, 2016, in R v3.2.4
 
-(Please note: some font irregularity exisits in this docuemnt, which I have not been able to resolve. Please excuse the occational words and phrases which abruptly shift to larger bold font. Thanks, -DS.)
-
 This program creates as its output a tidy data set called "ActivityDataSummarized.txt", which
 includes summary statistics from SmartPhones Dataset on Human Activity Recognition devices (please 
 see the attached R program script 'run_analsis.R', and the data details in the project codebook, both
  of which are attached to this repo.)
+
+(Also, please note: some font irregularity exisits in this docuement which I have not been able to resolve. Please excuse the occasional words and phrases which abruptly shift to larger bold font. Thanks.)
+
 The program accomplishes the 5 primary sucess criteria of given for this project, in 5 programming steps:
                             1: Merge the Training and Test Data into a single 'tidy' data set. 
                             2: Extract only the Mean and Standard Deviation measures from each 
