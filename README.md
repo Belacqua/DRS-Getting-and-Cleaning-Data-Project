@@ -17,8 +17,7 @@ The program accomplishes the 5 primary sucess criteria of given for this project
 The 5 criteria above  roughly correspond to the 5 parts of the program. However, this correspondence is not
 exact. For example, an exception is part 1, where test and training data are combined. Though this is still 
 done in part 1, the bringing together of the 'X' (measurements) and 'Y' (Activities) columnns into a single 
-data set is accomplished only at the end of part 2, after the measure data has been reduced to only mean and 
-standard deviations. I did this to simplify the final part of the criteria 1 process.
+data set is accomplished only at the end of part 2, after the measure data column list has been reduced. 
 ------------------------------------------------------------------------------------------------------------
 DEPENDENCIES:
 This programming depends on the working directory including the following 
