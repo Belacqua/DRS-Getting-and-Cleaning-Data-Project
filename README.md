@@ -1,5 +1,7 @@
  'Getting and Cleaning Data' Class Project - David R Scott ('Belaqua@me.com') 
  Created April 10th, 2016, in R v3.2.4
+(Please Note: some font irregularity exisits in this docuemnt, which I have not been able to resolve. Please excuse the occational words and phrases which abruptly shift to larger bold font. Thanks, -DS.
+
 This program creates as its output a tidy data set called "ActivityDataSummarized.txt", which
 includes summary statistics from SmartPhones Dataset on Human Activity Recognition devices (please 
 see the attached R program script 'run_analsis.R', and the data details in the project codebook, both
